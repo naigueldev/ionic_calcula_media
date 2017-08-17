@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Carros
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <!-- ANGULAR -->
+    <ion-item *ngFor="let carro of carros" (click)="seleciona(carro)">
+      <h2>{{ carro.nome }}</h2>
+      <h3>R${{ carro.preco }}</h3>
+      <p>Ano {{ carro.ano }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
